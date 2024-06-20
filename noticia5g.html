@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nova era tecnológica...</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body class="mainContent fundo3 bg-img bg-fixed">
+
+    <!--inicio do navbar-->
+
+    <nav class="navbar navbar-expand-lg bg-dark">
+        <div class="container-fluid">
+            <a href="home.html">
+                <img class="navbarLogo ms-2" src="imagens/logo.jpg" alt="">
+            </a>
+            <a class="navbar-brand text-white ms-3" href="home.html">Tecnohub</a>
+            <button class="navbar-toggler text-white toggleButton" onclick="toggleHandler()" type="button"
+                data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i id="toggleIcon" class="bi bi-caret-down-fill"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                    <li class="nav-item d-lg-none ms-2 me-2">
+                        <a class="text-light nav-link" style="width: 5%;" data-bs-toggle="offcanvas" href="#offcanvas"
+                            role="button" aria-controls="offcanvasExample">
+                            <i class="bi bi-person-fill header-p"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item ms-2 me-2">
+                        <a class="nav-link active text-white" aria-current="page" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown ms-2 me-2">
+                        <a class="nav-link text-white dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Tecnologia
+                        </a>
+                        <ul class="dropdown-menu bg-dark">
+                            <li><a class="dropdown-item text-light " href="#">Inteligência Artificial (IA)</a></li>
+                            <li><a class="dropdown-item text-light " href="#">Impressão 3D</a></li>
+                            <li><a class="dropdown-item text-light " href="#">Tecnologia Assistiva</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item ms-2 me-2">
+                        <a class="nav-link text-white" href="#">On fire</a>
+                    </li>
+                    <li class="nav-item ms-2 me-2">
+                        <a class="nav-link active text-white" aria-current="page" href="">Stories</a>
+                    </li>
+                    <li class="nav-item ms-2 me-2">
+                        <a class="nav-link active text-white" aria-current="page" href="">Jogos</a>
+                    </li>
+                </ul>
+                <a class="text-light nav-link d-none d-lg-block me-2" data-bs-toggle="offcanvas" href="#offcanvas"
+                    role="button" aria-controls="offcanvasExample">
+                    <i class="bi bi-person-fill header-p"></i>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!--fim do navbar-->
+
+    <!--inicio do offcanvas menu-->
+
+    <div class="offcanvas offcanvas-end bg-dark" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel">
+        <div class="offcanvas-header ms-1">
+            <a href="perfil.html">
+                <img src="imagens/baseg.png" class="navbarLogo me-2" alt="">
+            </a>
+            <h5 class="offcanvas-title text-light" id="offcanvasLabel">Based</h5>
+            <a href="" type="" class="offcanvasClose bg-dark" data-bs-dismiss="offcanvas" aria-label="Close">
+                <i class="bi bi-x-lg"></i>
+            </a>
+        </div>
+        <div class="border-bottom offcanvas-borda"></div>
+        <div class="hFlex text-light ms-2 mt-2">
+
+            <div class="accordion bg-dark" id="accordionExample">
+                <div class="accordion-item bg-dark" style="border: none;">
+                    <h2 class="accordion-header bg-dark">
+
+                        <a href="" class="accordion-button no-text-decoration mt-2 bg-dark text-light"
+                            style="padding: 0; box-shadow: none;" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                            <i class="bi bi-person-circle me-1"></i> Seu perfil
+                        </a>
+
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body hFlex">
+                            <a href="perfil.html" class="text-light no-text-decoration mt-2">
+                                <i class="bi bi-arrow-right-circle"></i> Ir para o perfil
+                            </a>
+                            <a href="" class="text-light no-text-decoration mt-2">
+                                <i class="bi bi-envelope-fill"></i> Notificações
+                            </a>
+                            <a href="perfil.html" class="text-light no-text-decoration mt-2">
+                                <i class="bi bi-people-fill"></i> Amigos
+                            </a>
+                            <a href="perfil.html" class="text-light no-text-decoration mt-2">
+                                <i class="bi bi-postcard"></i> Suas publicações
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <a href="index.html" class="text-light no-text-decoration mt-2">
+                <i class="bi bi-box-arrow-in-left"></i> Sair da conta
+            </a>
+
+            <div class="border-bottom offcanvas-borda mt-2"></div>
+
+            <a href="home.html" class="text-light no-text-decoration mt-2">
+                <i class="bi bi-house-door-fill"></i> Home
+            </a>
+            <a href="" class="text-light no-text-decoration mt-2">
+                <i class="bi bi-robot"></i> Inteligência Artificial
+            </a>
+            <a href="" class="text-light no-text-decoration mt-2">
+                <i class="bi bi-printer-fill"></i> Impressão 3d
+            </a>
+            <a href="" class="text-light no-text-decoration mt-2">
+                <i class="bi bi-person-wheelchair"></i> Tecnologia Assistiva
+            </a>
+            <a href="" class="text-light no-text-decoration mt-2">
+                <i class="bi bi-camera-reels"></i> Stories
+            </a>
+            <a href="" class="text-light no-text-decoration mt-2">
+                <i class="bi bi-controller"></i> Jogos
+            </a>
+        </div>
+    </div>
+
+    <!--fim do offcanvas menu-->
+
+    <!--inicio do header-->
+
+    <header class="container mt-3">
+        <div class="">
+            <div class="row">
+                <div class="bg-img-section header1">
+
+                    <h4 class="text-light display-2 hFlex center ms-3">Nova Era Tecnológica Chega ao Brasil com a
+                        Implementação
+                        do 5G</h4>
+
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!--fim do header-->
+
+    <!--inicio do main-->
+
+    <main class="mt-3 mb-2">
+
+        <!--section cards-->
+
+        <section>
+            <div class="container fonte2">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-12 bg-white borda1 py-1">
+                        <h1 class="py-3">Brasil Recebe o 5G: Nova Era de Conectividade Chega ao País</h1>
+                        <p class="py-3 fonte">Após meses de expectativa e preparação, o Brasil finalmente dá as
+                            boas-vindas à quinta geração de tecnologia móvel, o 5G. Com um lançamento histórico, as
+                            principais operadoras do país anunciaram hoje o início da disponibilidade comercial dessa
+                            revolucionária rede de comunicação.</p>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <div class="noticia1 bg-img-noticia py-1"></div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-------------------------------------------------------->
+
+        <section class="container bg-white mt-3 borda3 fonte2">
+            <div class="row">
+
+
+                <div class="col-lg-9 col-md-6 col-sm-12 mt-3">
+                    <h2>Maior velocidade</h2>
+
+                    <p class="w-100 fonte">O 5G promete transformar radicalmente a forma como os
+                        brasileiros se conectam, promovendo
+                        velocidades até 100 vezes mais rápidas do que o 4G, além de uma capacidade muito maior para
+                        suportar um número elevado de dispositivos simultâneos. Esta tecnologia não apenas acelerará
+                        a
+                        navegação na internet, mas também abrirá caminho para avanços significativos em áreas como
+                        saúde, educação, transporte e indústria.</p>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 mt-3">
+                    <img src="imagens/velocidade.png" alt="Imagem 1" class="borda1 w-100 mb-3">
+                </div>
+
+
+
+                <div class="w-60">
+                    <div class="borda2"></div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 mt-3">
+                    <img src="imagens/noticia2.jpg" alt="Imagem 1" class="w-100 borda1 mb-3">
+                </div>
+                <div class="col-lg-9 col-md-6 col-sm-12 mt-3">
+                    <h2>Melhora na expêriencia de usuários</h2>
+                    <p class=" fonte">Os primeiros usuários já relatam uma experiência
+                        notavelmente mais fluida ao navegar na internet,
+                        assistir a vídeos em alta definição e participar de videochamadas sem interrupções. As
+                        grandes
+                        cidades foram as primeiras a receber a cobertura completa do 5G, com planos ambiciosos para
+                        expandir rapidamente para áreas rurais nos próximos anos.</p>
+                </div>
+
+
+                <div class="w-60">
+                    <div class="borda2"></div>
+                </div>
+
+                <div class="col-lg-9 col-md-6 col-sm-12 mt-3">
+                    <h2>Crescimento econômico</h2>
+                    <p class=" fonte">Em seu discurso de lançamento, o Ministro das
+                        Comunicações enfatizou que o Brasil está entrando
+                        em uma nova era de inovação digital, posicionando-se na vanguarda tecnológica global. "O 5G
+                        não
+                        é apenas mais uma rede de telecomunicações, é um catalisador para o crescimento econômico, a
+                        inclusão digital e o desenvolvimento sustentável", afirmou.</p>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <img src="imagens/dinheiro.jpg" alt="Imagem 1" class=" borda1 w-100 mb-3">
+                </div>
+
+                <div class="w-60">
+                    <div class="borda2"></div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <img src="imagens/brasil2.jpg" alt="Imagem 1" class=" borda1 w-100 mb-3 mt-3">
+                </div>
+
+                <div class="col-lg-9 col-md-6 col-sm-12 mt-3">
+                    <h2>Brasil mais conectado</h2>
+                    <p class=" fonte">Apesar dos desafios técnicos e regulatórios, as
+                        operadoras se mostram otimistas quanto ao futuro
+                        do 5G no Brasil. "Estamos comprometidos em garantir que todos os brasileiros possam acessar
+                        essa
+                        tecnologia transformadora, contribuindo para um país mais conectado e competitivo
+                        globalmente",
+                        declarou o CEO de uma das principais empresas de telecomunicações do país.</p>
+                </div>
+
+
+                <div class="w-60">
+                    <div class="borda2"></div>
+                </div>
+
+                <div class="col-lg-9 col-md-6 col-sm-12 mt-3">
+                    <h2 class="">Menor Latência</h2>
+                    <p class=" fonte">Com a promessa de mais velocidade, menor latência e
+                        maior capacidade, o 5G já está mudando as
+                        expectativas dos consumidores e empresas brasileiras quanto ao que é possível na era
+                        digital.
+                        Este marco não apenas marca um avanço tecnológico significativo, mas também abre novos
+                        horizontes para a inovação e o desenvolvimento social no Brasil.</p>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <img src="imagens/latencia.png" alt="Imagem 1" class=" borda1 w-100 mb-3">
+                </div>
+
+
+
+            </div>
+        </section>
+
+
+
+
+
+        <!----------------------------------------->
+
+        <section class="container mt-3">
+            <div class="">
+                <div class="row">
+                    <div class="justify-content-center col-12">
+                        <div class="comentario">
+                            <h2 class="mb-2 display-5">Comentários <i class="bi bi-chat"></i></h2>
+                            <h4 class="mb-2">Seja o primeiro a comentar...</h4>
+                            <form>
+                                <div class="form-group ">
+
+                                    <!-- <input type="text" id="username" class="form-control bg-gray"
+                                        placeholder="Digite seu comentário..." required> -->
+
+
+                                    <textarea id="username" class="form-control bg-gray"
+                                    placeholder="Digite seu comentário..." requireds rows="5"></textarea>
+                                </div>
+
+                                
+                                <div class="d-flex">
+                                    <a href="home.html" class="loginBtn btn btn-primary btn-block mt-4 ms-auto"
+                                        onclick="">
+                                        Enviar <i class="bi bi-send"></i>
+                                    </a>
+                                </div>
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!--section cards-->
+        <section class="container my-3">
+            <div class="row">
+                <h1 class="text-light">Outras Notícias</h1>
+                <div class="col-md-12 col-sm-12">
+                    <div class="row my-2">
+                        <div class="col-6">
+                            <a href="" class="no-text-decoration">
+                                <div class="bg-img-section-2 post blockchain me-2 mb-3 s-flex">
+                                    <h5 class="text-light mb-3 ms-2"><strong>Blockchain e Criptomoedas</strong></h5>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-6">
+                            <a href="" class="no-text-decoration">
+                                <div class="bg-img-section-2 post internet me-2 mt-1 s-flex">
+                                    <h5 class="text-light mb-3 ms-2"><strong>Internet das Coisas</strong></h5>
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--section stories-->
+
+
+        <!--section stories-->
+    </main>
+
+    <!--fim do main-->
+
+
+
+    <!--inicio do footer-->
+
+    <footer class="text-light flex mt-auto bg-dark">
+        <div class="container">
+
+            <hr class="mt-4">
+            <div class="row">
+                <div class="col-md-5 hFlex">
+                    <p class="mb-1">&copy; 2024 Tecnohub. Todos os direitos reservados. </p>
+                    <p class=""> Desenvolvido por Thales e Antonio </p>
+                </div>
+                <div class="col-md-2">
+                    <div class="d-flex center">
+                        <img src="imagens/logo.jpg" class="footerLogo mt-2 mb-3">
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <ul class="list-inline float-md-right mb-0">
+                        <li class="list-inline-item">
+                            <a href="#" class="text-light">Termos</a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" class="text-light">Privacidade</a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" class="text-light">Segurança</a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" class="text-light">Status</a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" class="text-light">Documentação</a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" class="text-light">Contato</a>
+                        </li>
+                    </ul>
+                    <div class="f-flex mt-2 mb-1">
+                        <a href=""><i class="bi bi-twitter-x text-light"></i></a>
+                        <a href=""><i class="bi bi-instagram text-light"></i></a>
+                        <a href=""><i class="bi bi-facebook text-light"></i></a>
+                        <a href=""><i class="bi bi-youtube text-light"></i></a>
+                        <a href=""><i class="bi bi-github text-light"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!--fim do footer-->
+
+    <script src="js/app.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

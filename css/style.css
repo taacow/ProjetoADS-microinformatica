@@ -1,0 +1,499 @@
+:root {
+    --gray: #f0f0f0;
+    --black: #23242a;
+    --gray2: #cacaca;
+}
+
+.navbarLogo {
+    width: 35px;
+    border-radius: 50%;
+}
+
+.toggleButton:focus {
+    background-color: inherit;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none !important;
+}
+
+.footerLogo {
+    width: 50px;
+    border-radius: 50%;
+}
+
+.mainContent {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.vh-70 {
+    height: 10vh;
+}
+
+.vh-80 {
+    height: 80vh;
+}
+
+.center {
+    justify-content: center;
+    align-items: center;
+}
+
+.loginForm {
+    max-width: 350px;
+    margin: auto;
+    padding: 30px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.registerForm {
+    max-width: 700px;
+    margin: auto;
+    padding: 30px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.hFlex {
+    display: flex;
+    flex-direction: column;
+}
+
+.h1-home {
+    font-size: 80px !important;
+}
+
+.containerHome {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.bg-gray {
+    background-color: var(--gray) !important;
+}
+
+.loginBtn {
+    text-decoration: none;
+    color: white;
+}
+
+.f-flex {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.carrossel {
+    height: 50vh;
+
+}
+
+.justify {
+    justify-content: space-between;
+}
+
+.containerCarrossel {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.story-card {
+    margin-bottom: 20px;
+}
+
+.bg-img {
+    background-position: center;
+    background-size: cover;
+}
+
+.bg-fixed {
+    background-attachment: fixed;
+}
+
+.fundo1 {
+    background-image: url(../imagens/fundo1.jpg);
+}
+
+.fundo2 {
+    background-image: url(../imagens/fundo2.jpg);
+}
+
+.fundo3 {
+    background-image: url(../imagens/fundo3.jpg);
+}
+
+.imgStories {
+    width: 90%;
+    border-radius: 2%;
+}
+
+.bg-img-section {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    min-height: 45vh;
+    border-radius: 3%;
+}
+
+.inteligenciaArtificial {
+    background-image: url(../imagens/IA.jpeg);
+}
+
+.bg-img-header {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+}
+
+.img5g {
+    background-image: url(../imagens/5g.jpeg);
+}
+
+.s-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.p-section {
+    color: white;
+    -webkit-text-stroke-width: 0.4px;
+    -webkit-text-stroke-color: black;
+}
+
+.bg-img-section-2 {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 22vh;
+    border-radius: 3%;
+}
+
+.blockchain {
+    background-image: url(../imagens/blockchain.jpg);
+}
+
+.computador {
+    background-image: url(../imagens/computador-quantico.jpeg);
+}
+
+.internet {
+    background-image: url(../imagens/internetdascoisas.jpg);
+}
+
+.cybersecurity {
+    background-image: url(../imagens/cybersecurity.jpg);
+}
+
+.post {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.post:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+}
+
+.post-title {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.post-date {
+    color: #6c757d;
+    margin-bottom: 10px;
+}
+
+.post-content {
+    line-height: 1.6;
+}
+
+.no-text-decoration {
+    text-decoration: none;
+}
+
+.login-p {
+    font-size: 30px !important;
+}
+
+.dropdown-item:focus,
+.dropdown-item:hover,
+.nav-item:hover {
+    background-color: #007bff !important;
+}
+
+.header-p {
+    font-size: 20px;
+}
+
+.w-80 {
+    width: 80%;
+}
+
+w-30 {
+    width: 30% !important;
+}
+
+.offcanvasClose {
+    position: absolute;
+    top: 0.5em;
+    right: 0.5em;
+    ;
+    z-index: 2;
+    color: white !important;
+    font-size: 20px;
+}
+
+.offcanvas-borda {
+    opacity: 20%;
+    color: aliceblue;
+}
+
+.accordion-button:focus {
+    z-index: 3;
+    outline: 0;
+    box-shadow: none !important;
+}
+
+.perfil-card {
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.perfil-foto {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.perfil-links i {
+    font-size: 24px;
+    margin: 0 10px;
+    color: #495057;
+    transition: color 0.3s ease;
+}
+
+.perfil-links i:hover {
+    color: #007bff;
+}
+
+.aba-conteudo {
+    padding: 20px 0;
+}
+
+.post2 {
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+}
+
+.post2:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+}
+
+.post-title {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.post-date {
+    color: #6c757d;
+    margin-bottom: 10px;
+}
+
+.post-conteudo {
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .perfil-foto {
+        width: 120px;
+        height: 120px;
+    }
+
+    .perfil-links i {
+        font-size: 20px;
+        margin: 0 5px;
+    }
+}
+
+
+.header1 {
+    background-image: url(../imagens/5gheader.jpg);
+}
+
+
+.noticia1 {
+    background-image: url(../imagens/brasilwifi.jpg);
+
+}
+
+.w-100 {
+    width: 100%;
+
+}
+
+.bg-img-noticia {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    min-height: 45vh;
+    border-radius: 3%;
+
+}
+
+.borda1 {
+    border-radius: 3%;
+
+}
+
+.fonte {
+    font-size: 25px;
+    text-align: justify;
+}
+
+.paragrafo-imagem {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.paragrafo-imagem p {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.paragrafo-imagem img {
+    max-width: 100%;
+    height: auto;
+}
+
+.imagem-texto {
+    max-width: 100%;
+    height: auto;
+    max-height: 100%;
+}
+
+.borda2 {
+    opacity: 60%;
+    border: 1.5px solid;
+    border-bottom: black;
+}
+
+.w-60 {
+    width: 50%;
+}
+
+.borda3 {
+    border-radius: 1%;
+}
+
+.comentario {
+    width: 100%;
+    margin: auto;
+    border: 1px solid #ddd;
+    padding: 30px;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.comentarioAltura {
+    min-height: 15vh;
+
+}
+
+.bg-img-stories {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    min-height: 80vh;
+    border-radius: 3%;
+}
+
+.stories1 {
+    background-image: url(../imagens/stories1.jpg);
+}
+
+.stories2 {
+    background-image: url(../imagens/stories2.jpeg);
+}
+
+.stories3 {
+    background-image: url(../imagens/stories3.jpeg);
+}
+
+.stories4 {
+    background-image: url(../imagens/storiesdois4.jpeg);
+}
+
+.card1 {
+    background-image: url(../imagens/card1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.card2 {
+    background-image: url(../imagens/card2.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+
+.card3 {
+    background-image: url(../imagens/card3.jpeg);
+    background-position: left;
+    background-size: cover;
+
+}
+
+.card4 {
+    background-image: url(../imagens/card4.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.cardAltura {
+    min-height: 250px !important;
+}
+
+.bg-img-section-3 {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 42vh;
+    border-radius: 2%;
+}
+.nvidia {
+    background-image: url(../imagens/nvidia.png);
+}
+.bloodborne {
+    background-image: url(../imagens/bloodborne.jpg);
+    background-position: top;
+}
+.silksong {
+    background-image: url(../imagens/silksong.jpg);
+    background-position: top;
+}
+.fonte2{
+    font-family: 'Times New Roman', Times, serif;
+  }
